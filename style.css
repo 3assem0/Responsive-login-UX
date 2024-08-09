@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(pexels-ajaybhargavguduru-863988.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.Home{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(50, 166, 228, 0.63);
+}
+.signIn{
+    h1{
+        color: rgb(224, 157, 64);
+    }
+    min-width: 300px;
+    height: 350px;
+    background-color: rgba(250, 235, 215, 0.356);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: cursive;
+    gap: 40px;
+}
+input{
+    width: 80%;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.674);
+    color: white;
+    box-shadow: 0 2px 1px white;
+
+}
+button{
+    font-family: cursive;
+    background-color: rgb(224, 157, 64);
+    color: white;
+    width: 110px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900;
+    transition: all .4s;
+    &:hover{
+        background-color: white;
+        color: rgb(224, 157, 64);
+    }
+}
+p{
+    color: aliceblue;
+    span a{
+        text-decoration: none;
+        color: rgb(224, 157, 64);
+        font-weight: 600;
+    }
+    margin-bottom: 20px;
+}
+@media screen and (max-width:431px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+    .Home{
+        padding: 15px;
+        width: fit-content;
+    }
+}
